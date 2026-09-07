@@ -1,14 +1,14 @@
 :root {
-  --bg: #f4efe8;
-  --bg-alt: #ebe4da;
-  --paper: #fbf8f4;
-  --ink: #1f1a16;
-  --muted: #6b6158;
-  --line: rgba(31, 26, 22, 0.12);
-  --accent: #9a6b45;
-  --accent-dark: #7a5234;
-  --gold: #c4a574;
-  --shadow: 0 30px 60px rgba(31, 26, 22, 0.08);
+  --bg: #e7eef4;
+  --bg-alt: #d7e2ec;
+  --paper: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: rgba(15, 23, 42, 0.16);
+  --accent: #1d4d4a;
+  --accent-dark: #12332f;
+  --gold: #b45309;
+  --shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
   --serif: "Cormorant Garamond", "Times New Roman", serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
   --max: 1120px;
@@ -73,7 +73,7 @@ a {
   margin: 0;
   padding: 0.65rem 1.5rem;
   background: #1f4d36;
-  color: #f4efe8;
+  color: #f8fafc;
   text-align: center;
   font-size: 0.78rem;
   font-weight: 500;
@@ -85,7 +85,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(244, 239, 232, 0.94);
+  background: rgba(231, 238, 244, 0.94);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease, background 0.2s ease;
@@ -352,7 +352,7 @@ h3 {
   margin: 0;
   font-size: 1.18rem;
   max-width: 46rem;
-  color: #3b342e;
+  color: var(--ink);
 }
 
 .pillars {
@@ -410,7 +410,7 @@ h3 {
 
 .role-summary {
   margin: 0.35rem 0 0;
-  color: #3f3832;
+  color: #1e293b;
 }
 
 .expertise-grid {
