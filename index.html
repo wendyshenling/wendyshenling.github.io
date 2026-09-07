@@ -3,56 +3,324 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic Tac Toe</title>
+    <title>Wendy Shen · PMO Analyst</title>
+    <meta
+      name="description"
+      content="Wendy Shen is a Melbourne-based PMO professional supporting large-scale digital transformation across financial services, government and healthcare."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app">
-      <header class="header">
-        <h1>Tic Tac Toe</h1>
-        <p class="subtitle">Take turns. Three in a row wins.</p>
-      </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <section class="mode" aria-label="Game mode">
-        <button class="mode-btn is-active" data-mode="cpu" type="button">
-          vs Computer
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="wordmark" href="#top">Wendy Shen</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span></span>
+          <span></span>
         </button>
-        <button class="mode-btn" data-mode="friend" type="button">
-          vs Friend
-        </button>
-      </section>
-
-      <p class="status" id="status" role="status">Your turn — you are X</p>
-
-      <div class="board" id="board" role="grid" aria-label="Tic tac toe board">
-        <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1"></button>
-        <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2"></button>
-        <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3"></button>
-        <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4"></button>
-        <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5"></button>
-        <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6"></button>
-        <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7"></button>
-        <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8"></button>
-        <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9"></button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
+    </header>
 
-      <section class="scores" aria-label="Scores">
-        <div class="score">
-          <span class="score-label" id="x-label">You (X)</span>
-          <strong id="score-x">0</strong>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Melbourne · Australia</p>
+          <h1>Governance that keeps complex programs moving.</h1>
+          <p class="lede">
+            PMO Analyst with more than a decade supporting digital transformation
+            across financial services, government and healthcare — bringing
+            clarity, control and executive-ready insight to delivery.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#experience">View experience</a>
+          </div>
         </div>
-        <div class="score">
-          <span class="score-label">Draws</span>
-          <strong id="score-draw">0</strong>
+        <figure class="hero-portrait">
+          <img
+            src="images/wendy-shen.jpg"
+            alt="Portrait of Wendy Shen"
+            width="640"
+            height="640"
+          />
+        </figure>
+      </section>
+
+      <section class="stats" aria-label="Highlights">
+        <div class="stat">
+          <span class="stat-value">13+</span>
+          <span class="stat-label">Years in delivery</span>
         </div>
-        <div class="score">
-          <span class="score-label" id="o-label">Computer (O)</span>
-          <strong id="score-o">0</strong>
+        <div class="stat">
+          <span class="stat-value">7</span>
+          <span class="stat-label">Enterprise organisations</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">PMP</span>
+          <span class="stat-label">Prince2 · SAFe · ITIL</span>
         </div>
       </section>
 
-      <button class="reset" id="reset" type="button">New game</button>
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>A trusted partner to program leadership.</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">
+            Ling Shen (Wendy) is an experienced PMO professional who supports
+            large-scale programs from governance through to go-live. She
+            coordinates Steering Committees and program boards, turns
+            multi-workstream delivery into clear reporting, and keeps RAID,
+            schedule and benefits information current so leaders can decide
+            with confidence.
+          </p>
+          <ul class="pillars">
+            <li>
+              <h3>Executive governance</h3>
+              <p>
+                Steering Committee packs, board reporting and decision logs
+                that are concise, accurate and on time.
+              </p>
+            </li>
+            <li>
+              <h3>Integrated delivery</h3>
+              <p>
+                Schedules, dependencies and RAID that give one view of
+                progress across complex, multi-workstream programs.
+              </p>
+            </li>
+            <li>
+              <h3>Stakeholder clarity</h3>
+              <p>
+                Translating technical and delivery detail into information
+                executives, business teams and vendors can act on.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Selected roles</h2>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <div class="role-meta">
+              <span class="dates">Jun 2024 — Present</span>
+              <h3>PMO Analyst</h3>
+              <p class="org">The Northern Trust Company of Melbourne</p>
+            </div>
+            <p class="role-summary">
+              Supporting the Regulatory Change Program — governance, integrated
+              scheduling and a PMO playbook that standardised reporting, RAID
+              and project controls across workstreams.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Sep 2021 — May 2024</span>
+              <h3>PMO Analyst</h3>
+              <p class="org">Australia Post</p>
+            </div>
+            <p class="role-summary">
+              POST+ digital transformation across six workstreams. Established
+              an integrated planning and reporting framework that improved
+              executive visibility and supported nine production releases.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Aug 2020 — Aug 2021</span>
+              <h3>PMO Analyst</h3>
+              <p class="org">Department of Premier and Cabinet</p>
+            </div>
+            <p class="role-summary">
+              Statewide Digital Visitation Register for Victoria’s COVID-19
+              response — ministerial briefings, Power BI reporting and
+              delivery coordination under compressed timeframes.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Jun 2019 — Jul 2020</span>
+              <h3>Portfolio Analyst</h3>
+              <p class="org">Royal Melbourne Hospital</p>
+            </div>
+            <p class="role-summary">
+              Parkville EMR program across multiple health services. Supported
+              board governance, go-live readiness and a shared clinical
+              platform for safer, more connected care.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Jan 2016 — May 2019</span>
+              <h3>Portfolio Analyst</h3>
+              <p class="org">ME Bank</p>
+            </div>
+            <p class="role-summary">
+              Identity and access management and AML programs delivered on
+              time and within budget — combining project controls with Agile
+              delivery support.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Oct 2013 — Nov 2015</span>
+              <h3>Program Coordinator</h3>
+              <p class="org">Lockheed Martin Australia</p>
+            </div>
+            <p class="role-summary">
+              Infrastructure refresh and Windows 7 SOE rollout for the ATO,
+              including nationwide site delivery and a 28,000-user deployment.
+            </p>
+          </li>
+          <li>
+            <div class="role-meta">
+              <span class="dates">Oct 2011 — Sep 2013</span>
+              <h3>Project Coordinator</h3>
+              <p class="org">Telstra</p>
+            </div>
+            <p class="role-summary">
+              Complex billing system upgrade for enterprise and government
+              clients, coordinating implementation with minimal operational
+              disruption.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="section-heading">
+          <p class="eyebrow">Expertise</p>
+          <h2>How I contribute</h2>
+        </div>
+        <div class="expertise-grid">
+          <article>
+            <h3>Program controls</h3>
+            <ul>
+              <li>Steering Committee &amp; board support</li>
+              <li>RAID, actions and decisions</li>
+              <li>Integrated planning &amp; milestones</li>
+              <li>Benefits tracking</li>
+              <li>Operational readiness</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Insight &amp; reporting</h3>
+            <ul>
+              <li>Executive status packs</li>
+              <li>Power BI dashboards</li>
+              <li>Multi-workstream consolidation</li>
+              <li>Budget monitoring</li>
+              <li>Workshop facilitation</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Platforms</h3>
+            <ul>
+              <li>Microsoft Project &amp; 365</li>
+              <li>Jira · Confluence · SharePoint</li>
+              <li>Azure DevOps · ServiceNow</li>
+              <li>Power Automate · Planner</li>
+              <li>Miro · SAP · AWS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="credentials">
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>Education &amp; certification</h2>
+        </div>
+        <div class="credentials">
+          <article class="credential featured">
+            <p class="credential-label">Education</p>
+            <h3>Bachelor of Information Systems</h3>
+            <p>Swinburne University of Technology · 2010</p>
+          </article>
+          <ul class="certs">
+            <li>
+              <strong>PMP</strong>
+              <span>August 2013</span>
+            </li>
+            <li>
+              <strong>PRINCE2</strong>
+              <span>February 2014</span>
+            </li>
+            <li>
+              <strong>SAFe Agile</strong>
+              <span>May 2017</span>
+            </li>
+            <li>
+              <strong>Scrum Master</strong>
+              <span>December 2018</span>
+            </li>
+            <li>
+              <strong>ITIL v3 Foundation</strong>
+              <span>December 2013</span>
+            </li>
+            <li>
+              <strong>AWS Cloud Practitioner</strong>
+              <span>September 2020</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s discuss your program.</h2>
+        </div>
+        <p class="contact-intro">
+          Open to PMO and portfolio opportunities in Melbourne and hybrid
+          environments. I welcome a conversation about how I can support
+          your next transformation.
+        </p>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:shenling35@hotmail.com">
+            <span class="contact-label">Email</span>
+            <span>shenling35@hotmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+61433669825">
+            <span class="contact-label">Mobile</span>
+            <span>0433 669 825</span>
+          </a>
+          <div class="contact-card">
+            <span class="contact-label">Location</span>
+            <span>Glen Waverley, Melbourne</span>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="game.js"></script>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Wendy Shen</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>
