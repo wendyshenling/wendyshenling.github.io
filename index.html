@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Tic Tac Toe</h1>
+        <p class="subtitle">Take turns. Three in a row wins.</p>
+      </header>
+
+      <section class="mode" aria-label="Game mode">
+        <button class="mode-btn is-active" data-mode="cpu" type="button">
+          vs Computer
+        </button>
+        <button class="mode-btn" data-mode="friend" type="button">
+          vs Friend
+        </button>
+      </section>
+
+      <p class="status" id="status" role="status">Your turn — you are X</p>
+
+      <div class="board" id="board" role="grid" aria-label="Tic tac toe board">
+        <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1"></button>
+        <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2"></button>
+        <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3"></button>
+        <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4"></button>
+        <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5"></button>
+        <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6"></button>
+        <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7"></button>
+        <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8"></button>
+        <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9"></button>
+      </div>
+
+      <section class="scores" aria-label="Scores">
+        <div class="score">
+          <span class="score-label" id="x-label">You (X)</span>
+          <strong id="score-x">0</strong>
+        </div>
+        <div class="score">
+          <span class="score-label">Draws</span>
+          <strong id="score-draw">0</strong>
+        </div>
+        <div class="score">
+          <span class="score-label" id="o-label">Computer (O)</span>
+          <strong id="score-o">0</strong>
+        </div>
+      </section>
+
+      <button class="reset" id="reset" type="button">New game</button>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
